@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+
+<service-builder package-path="com.a3groups.bts.services" auto-namespace-tables="true">
+    <author>A3 Groups Inc.</author>
+    <namespace>BTS</namespace>
+    <entity name="School" local-service="true" cache-enabled="false">
+        <column primary="true" name="id" type="int"></column>
+        <column name="name" type="String"></column>
+        <column name="address" type="String"></column>
+        <column name="district" type="String"></column>
+        <column name="city" type="String"></column>
+        <column name="state" type="String"></column>
+        <finder return-type="Collection" name="DistrictAndCityAndState">
+        	<finder-column name="district"></finder-column>
+        	<finder-column name="city"></finder-column>
+        	<finder-column name="state"></finder-column>
+        </finder>
+    </entity>
+</service-builder>

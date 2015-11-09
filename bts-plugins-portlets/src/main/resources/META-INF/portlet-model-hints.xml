@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.a3groups.bts.services.model.School">
+		<field name="id" type="int" />
+		<field name="name" type="String" />
+		<field name="address" type="String" />
+		<field name="district" type="String" />
+		<field name="city" type="String" />
+		<field name="state" type="String" />
+	</model>
+</model-hints>
