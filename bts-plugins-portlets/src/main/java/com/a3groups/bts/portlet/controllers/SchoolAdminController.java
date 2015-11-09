@@ -31,5 +31,6 @@ public class SchoolAdminController {
 	public void actionOneMethod(ActionRequest request, ActionResponse response) {
 		String schoolName = ParamUtil.getString(request, "schoolName");
 		log.info("School Name : "+ schoolName );
+		
 	}
 }
